@@ -1,0 +1,13 @@
+box: joshuamckenty/cloud-foundry-box
+build:
+    steps:
+        - pip-install
+        - script:
+            name: run the tests
+            code: nosetests
+deploy:
+    steps:
+        - joshuamckenty/cloud-foundry-env:
+            appname: bp-roadmap
+            keyname: ORCHESTRATE_KEY
+        - joshuamckenty/cloud-foundry-deploy

@@ -52,3 +52,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+roadmap/default_config.py
+venv/
