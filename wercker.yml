@@ -2,9 +2,9 @@ box: wercker/python
 build:
     steps:
         - pip-install
-        - script:
-            name: run the tests
-            code: nosetests
+#        - script:
+#            name: run the tests
+#            code: nosetests
 deploy:
     steps:
 #        - joshuamckenty/cloud-foundry-env:
