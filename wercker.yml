@@ -1,4 +1,4 @@
-box: joshuamckenty/cloud-foundry-box
+box: wercker/python
 build:
     steps:
         - pip-install
@@ -7,7 +7,7 @@ build:
             code: nosetests
 deploy:
     steps:
-        - joshuamckenty/cloud-foundry-env:
-            appname: bp-roadmap
-            keyname: ORCHESTRATE_KEY
+#        - joshuamckenty/cloud-foundry-env:
+#            appname: bp-roadmap
+#            keyname: ORCHESTRATE_KEY
         - joshuamckenty/cloud-foundry-deploy
